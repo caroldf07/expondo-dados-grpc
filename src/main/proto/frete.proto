@@ -12,14 +12,6 @@ service FreteService {
   rpc calculaFrete(CalculaFreteRequest) returns (CalculaFreteResponse){}
 }
 
-message FreteRequest {
-  string name = 1;
-}
-
-message FreteReply {
-  string message = 1;
-}
-
 message CalculaFreteRequest{
   string cep = 1;
 }
@@ -28,3 +20,12 @@ message CalculaFreteResponse{
   double valor = 1;
   string cep = 2;
 }
+
+message FreteRequest {
+  string name = 1;
+}
+
+message FreteReply {
+  string message = 1;
+}
+

@@ -15,16 +15,6 @@ public final class Frete {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_br_com_zup_FreteRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_br_com_zup_FreteRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_br_com_zup_FreteReply_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_br_com_zup_FreteReply_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_br_com_zup_CalculaFreteRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -34,6 +24,16 @@ public final class Frete {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_br_com_zup_CalculaFreteResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_br_com_zup_FreteRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_br_com_zup_FreteRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_br_com_zup_FreteReply_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_br_com_zup_FreteReply_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -43,11 +43,11 @@ public final class Frete {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013frete.proto\022\nbr.com.zup\"\034\n\014FreteReques" +
-      "t\022\014\n\004name\030\001 \001(\t\"\035\n\nFreteReply\022\017\n\007message" +
-      "\030\001 \001(\t\"\"\n\023CalculaFreteRequest\022\013\n\003cep\030\001 \001" +
-      "(\t\"2\n\024CalculaFreteResponse\022\r\n\005valor\030\001 \001(" +
-      "\001\022\013\n\003cep\030\002 \001(\t2\237\001\n\014FreteService\022:\n\004send\022" +
+      "\n\013frete.proto\022\nbr.com.zup\"\"\n\023CalculaFret" +
+      "eRequest\022\013\n\003cep\030\001 \001(\t\"2\n\024CalculaFreteRes" +
+      "ponse\022\r\n\005valor\030\001 \001(\001\022\013\n\003cep\030\002 \001(\t\"\034\n\014Fre" +
+      "teRequest\022\014\n\004name\030\001 \001(\t\"\035\n\nFreteReply\022\017\n" +
+      "\007message\030\001 \001(\t2\237\001\n\014FreteService\022:\n\004send\022" +
       "\030.br.com.zup.FreteRequest\032\026.br.com.zup.F" +
       "reteReply\"\000\022S\n\014calculaFrete\022\037.br.com.zup" +
       ".CalculaFreteRequest\032 .br.com.zup.Calcul" +
@@ -58,30 +58,30 @@ public final class Frete {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_br_com_zup_FreteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_br_com_zup_FreteRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_br_com_zup_FreteRequest_descriptor,
-        new java.lang.String[] { "Name", });
-    internal_static_br_com_zup_FreteReply_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_br_com_zup_FreteReply_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_br_com_zup_FreteReply_descriptor,
-        new java.lang.String[] { "Message", });
     internal_static_br_com_zup_CalculaFreteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_br_com_zup_CalculaFreteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_br_com_zup_CalculaFreteRequest_descriptor,
         new java.lang.String[] { "Cep", });
     internal_static_br_com_zup_CalculaFreteResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_br_com_zup_CalculaFreteResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_br_com_zup_CalculaFreteResponse_descriptor,
         new java.lang.String[] { "Valor", "Cep", });
+    internal_static_br_com_zup_FreteRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_br_com_zup_FreteRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_br_com_zup_FreteRequest_descriptor,
+        new java.lang.String[] { "Name", });
+    internal_static_br_com_zup_FreteReply_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_br_com_zup_FreteReply_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_br_com_zup_FreteReply_descriptor,
+        new java.lang.String[] { "Message", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
